@@ -1,44 +1,85 @@
 <!DOCTYPE html>
- <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <title>SAN Email</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <style>
-      .banner {
-          padding: 10px 20px 10px 20px;
-          white-space: nowrap;
-      }
-  </style>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>SAN Email</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+
+        .main-table {
+            width: 600px; 
+            margin: auto;
+            padding: 0;
+            border-spacing: 0;
+        }
+        .banner {
+            padding: 10px 20px;
+            white-space: nowrap;
+            background: #e8e8e8;
+        }
+        .right {
+          text-align: right;
+        }
+
+        .box {
+            padding: 20px; 
+            border: solid 2px #e8e8e8; 
+            text-align: center
+        }
+
+        .contact {
+            margin-top: 20px;
+            width: 100%
+        }
+
+        .logo-table {
+            padding: 10px;
+            margin: auto
+        }
+        .logo {
+            width:100px; 
+            height:70px;
+            padding: 15px
+        }
+        .logo-img {
+            max-height: 100%; 
+            max-width: 100%
+        }
+
+    </style>
 </head>
+
 <body style="padding: 0; margin: 0;">
-    <table cellpadding="0" cellspacing="0" width="800" align="center">
+    <table class="main-table">
         <tr>
-            <td bgColor="#e8e8e8" class="banner">
+            <td class="banner">
                 Celebrate Labor Day with 50% OFF your entire order
             </td>
-            <td bgColor="#e8e8e8" align="right" class="banner"> 
+            <td class="banner right">
                 <u>View this in a browser</u>
             </td>
         </tr>
         <tr>
-            <td style="padding: 30px 20px 30px 20px;">
+            <td style="padding: 30px 20px;">
                 <img src="assets/san-logo-20-plus-years.png" alt="san-logo-20-plus-years">
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <img src="assets/labor-day-sale-hero-50-off.jpg" 
-                alt="labor-day-sale-hero-50-off" style="width: 100%; display: block">
+                <img src="assets/labor-day-sale-hero-50-off.jpg" alt="labor-day-sale-hero-50-off"
+                    style="width: 100%; display: block">
             </td>
         </tr>
         <tr>
-            <td colspan="2" style="border: solid 2px #e8e8e8; border-top: 0px; text-align: center ">
+            <td colspan="2">
+                <div class="box">        
                 <div style="padding-bottom: 5px">
                     <h1 style="color: blue;">Get 50% OFF Your Entire Order!</h1>
                 </div>
                 <div style="padding-bottom: 5px">
-                    <p>Order today and choose from over 175 natural health products, all backed by out 365-day "any reason" return policy.</p>
+                    <p>Order today and choose from over 175 natural health products, all backed by out 365-day "any
+                        reason" return policy.</p>
                 </div>
                 <div style="padding-bottom: 5px">
                     <p>But you'd better hurry! </p>
@@ -46,18 +87,37 @@
                 </div>
                 <h3 style="color: blue;">Save On Customer Favorites Like These</h3>
                 <img src="assets/bottle-collage.jpg" alt="bottle-collage" style="width: 100%">
-                <div style="padding: 25px">
+                <div style="padding: 25px 5px">
                     <img src="assets/labor-day-sale-promo.png" alt="labor-day-sale-promo" style="width: 100%">
                 </div>
-                <div style="padding: 10px">
-                    <p>Cannot be combined with other offers, applied to previous orders, MultiValue Bundles, Promo Packs, Skin Systems, NextLevel products or to existing AutoShip plans.</p>
+                <div>
+                    <p>Cannot be combined with other offers, applied to previous orders, MultiValue Bundles, Promo
+                        Packs, Skin Systems, NextLevel products or to existing AutoShip plans.</p>
                 </div>
-                
-
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="box contact">
+                <p><b>Questions about our products? <u>Contact our experts today.</u></b></p>
+                <p>Phone: Toll-free at 800.627.9721</p>
+                <table class="logo-table">
+                    <tr>
+                        <td class="logo"> <img src="assets/icon-365-logo.png" alt="icon-365-logo" class="logo-img"></td>
+                        <td class="logo"> <img src="assets/icon-inc5000.png" alt="icon-inc5000" class="logo-img" style="max-width: 110%; max-height: 110%;"></td>
+                        <td class="logo"> <img src="assets/icon-text-save-sms.png" alt="icon-text-save-sms" class="logo-img"></td>
+                        <td class="logo"> <img src="assets/icon-facebook.png" alt="icon-facebook" class="logo-img" style="max-width: 65%; max-height: 65%;"></td>
+                        <td class="logo"> <img src="assets/icon-us-flag.png" alt="icon-us-flag" class="logo-img" style="max-width: 65%; max-height: 65%;"></td>
+                    </tr>
+                </table>
+              
+                </div>
             </td>
         </tr>
 
 
     </table>
 </body>
+
 </html>
