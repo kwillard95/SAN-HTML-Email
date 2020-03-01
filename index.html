@@ -2,7 +2,6 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>SAN Email</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
@@ -30,12 +29,14 @@
 
         .contact {
             margin-top: 20px;
-            width: 100%
+            width: 100%;
+            padding: 0px
         }
 
         .logo-table {
-            padding: 10px;
-            margin: auto
+            padding-left: 30px;
+            padding-right: 30px;
+            margin: auto;
         }
         .logo {
             width:100px; 
@@ -46,6 +47,29 @@
             max-height: 100%; 
             max-width: 100%
         }
+        .divider-box {
+            position: absolute;
+            height: 30px;
+            width: 200px;
+            left: 200px;
+            background: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+        .divider {
+            position: absolute;
+            width: 100%;
+            top: 15px;
+            border-top: solid 3px blue
+        }
+        .vertical-divider {
+            height: 50px; 
+            width: 1px; 
+            background: #c0c0c0;
+        }
+
 
     </style>
 </head>
@@ -100,7 +124,8 @@
         <tr>
             <td colspan="2">
                 <div class="box contact">
-                <p><b>Questions about our products? <u>Contact our experts today.</u></b></p>
+                        <p style="display: inline-block"><b>Questions about our products?</b></p>
+                        <a href="" style="color: blue">Contact our experts today.</a>
                 <p>Phone: Toll-free at 800.627.9721</p>
                 <table class="logo-table">
                     <tr>
@@ -108,11 +133,36 @@
                         <td class="logo"> <img src="assets/icon-inc5000.png" alt="icon-inc5000" class="logo-img" style="max-width: 110%; max-height: 110%;"></td>
                         <td class="logo"> <img src="assets/icon-text-save-sms.png" alt="icon-text-save-sms" class="logo-img"></td>
                         <td class="logo"> <img src="assets/icon-facebook.png" alt="icon-facebook" class="logo-img" style="max-width: 65%; max-height: 65%;"></td>
-                        <td class="logo"> <img src="assets/icon-us-flag.png" alt="icon-us-flag" class="logo-img" style="max-width: 65%; max-height: 65%;"></td>
+                        <td class="logo"> <img src="assets/icon-us-flag.png" alt="icon-us-flag" class="logo-img" style="max-width: 80%; max-height: 80%;"></td>
                     </tr>
                 </table>
               
                 </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 20px 0">
+                <div style="position: relative">
+                    <div class="divider"></div>
+                    <div class="divider-box">
+                        <p style="color: white">Our Family Of Brands</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding:20px 0">
+                <table class="logo-table">
+                    <tr>
+                        <td class="logo"> <img src="assets/fob-purgevity-logo.png" alt="fob-purgevity-logo" class="logo-img"></td>
+                        <td><div class="vertical-divider"></div></td>
+                        <td class="logo"> <img src="assets/fob-san-logo.png" alt="fob-san-logo" class="logo-img"></td>
+                        <td><div class="vertical-divider"></div></td>
+                        <td class="logo"> <img src="assets/fob-litn-logo.png" alt="fob-litn-logo" class="logo-img"></td>
+                        <td><div class="vertical-divider"></div></td>
+                        <td class="logo"> <img src="assets/fob-charlies-choice-logo.png" alt="fob-charlies-choice-logo" class="logo-img"></td>
+                    </tr>
+                </table>
             </td>
         </tr>
 
