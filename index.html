@@ -57,10 +57,10 @@
 
         .divider-box {
             position: absolute;
-            height: 30px;
+            height: 25px;
             width: 200px;
             left: 200px;
-            background: #335291;
+            background: #183178;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -71,7 +71,7 @@
             position: absolute;
             width: 100%;
             top: 15px;
-            border-top: solid 3px #335291;
+            border-top: solid 3px #183178;
         }
 
         .vertical-divider {
@@ -81,8 +81,24 @@
         }
 
         .title {
-            text-transform: capitalize;
-            font-weight: bold;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 10px;
+            margin-bottom: 1px;
+            letter-spacing: normal;
+        }
+
+        .link {
+            letter-spacing: normal;
+            color:#3473ba;
+            font-size: 12px;
+        }
+
+        .body {
+            font-size: 11px;
+            margin-top: 2px;
+            letter-spacing: normal;
+            line-height: 1.6;
         }
         
     </style>
@@ -137,14 +153,13 @@
             <td colspan="2">
                 <div class="box contact">
                     <p style="display: inline-block"><b>Questions about our products?</b></p>
-                    <a href="" style="color: #335291; font-weight:900">Contact our experts today.</a>
+                    <a href="" style="color: #3473ba; font-weight:900;">Contact our experts today.</a>
                     <p style="margin: 0">Phone: Toll-free at 800.627.9721</p>
                     <table class="logo-table">
                         <tr>
                             <td class="logo"> <img src="assets/icon-365-logo.png" alt="icon-365-logo" class="logo-img">
                             </td>
-                            <td class="logo"> <img src="assets/icon-inc5000.png" alt="icon-inc5000" class="logo-img"
-                                    style="max-width: 110%; max-height: 110%;"></td>
+                            <td class="logo"> <img src="assets/icon-inc5000.png" alt="icon-inc5000" class="logo-img"></td>
                             <td class="logo"> <img src="assets/icon-text-save-sms.png" alt="icon-text-save-sms"
                                     class="logo-img"></td>
                             <td class="logo"> <img src="assets/icon-facebook.png" alt="icon-facebook" class="logo-img"
@@ -162,7 +177,7 @@
                 <div style="position: relative">
                     <div class="divider"></div>
                     <div class="divider-box">
-                        <p style="color: white; text-transform: uppercase; font-size: 11px; font-weight: 900;">Our Family Of Brands</p>
+                        <p style="color: white; text-transform: uppercase; font-size: 10px; font-weight: 900; letter-spacing: 1px;">Our Family Of Brands</p>
                     </div>
                 </div>
             </td>
@@ -193,15 +208,15 @@
         <tr>
             <td colspan="2" style="text-align: center; padding: 0 20px">
                 <p class="title">update your email preferences</p>
-                <p>You are receiving this email to your [email] account because you opted into our email list via our
+                <p class="body">You are receiving this email to your [email] account because you opted into our email list via our
                     website.</p>
-                <p>
-                    <a href="" style="color:#335291">Unsubscribe</a> | <a href="" style="color:#335291">Privacy
+                <p class="link">
+                    <a href="" style="color:#3473ba; padding-right:2px" >Unsubscribe</a> | <a href="" style="color:#3473ba; padding-left:2px">Privacy
                         Policy</a>
                 </p>
 
                 <p class="title">disclaimer</p>
-                <p>
+                <p class="body" style="font-style: italic;">
                     The information contained above is for the general consumer understanding and education and should
                     not be considered or used as a subsitute for medical advice, diagnosis, or treatment.
                     This product is not an alternative to any prescription drug. If you are currently taking a
@@ -213,7 +228,7 @@
                 </p>
 
                 <p class="title">brought to you by</p>
-                <p>
+                <p class="body">
                     Stop Aging Now, 4938 Hampden Lane #109, Bethesda, MD 20814.
                 </p>
             </td>
